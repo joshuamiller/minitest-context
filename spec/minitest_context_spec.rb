@@ -1,10 +1,10 @@
 require 'spec_setup'
 
-describe MiniTest::Context do
+describe "Contexts" do
   describe "an inherited context." do
     inherit_context :before_block
 
-    it "should execute a before block and assign @example to an array." do
+    it "should execute a before block and assign an Array to @example." do
       @example.must_be_instance_of(Array)
     end
   end
