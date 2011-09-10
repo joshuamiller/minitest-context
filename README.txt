@@ -20,11 +20,11 @@
   end
 
   describe SomeClass do
-    include_context :example
+    inherit_context :example
   end
 
   describe SomeOtherClass do
-    include_context :example
+    inherit_context :example
   end
 
 == License
