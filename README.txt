@@ -1,13 +1,15 @@
 = minitest/context
+  
   * home   : http://github.com/robgleeson/minitest-context
   * author : Rob Gleeson <rob@flowof.info>
 
 == Description
-minitest/context allows you to define contexts that you can use for code reuse in your tests.
-The idea orginated from shared_context() and include_context() methods distributed with RSpec.
+  
+  minitest/context allows you to define contexts that you can use for code reuse in your tests.
+  The idea orginated from shared_context() and include_context() methods distributed with RSpec.
 
-MiniTest supports code re-use in your tests already, via a subclass of MiniTest::Spec.
-You might want to look at that option, if you didn't know about it already.
+  MiniTest supports code re-use in your tests already, via a subclass of MiniTest::Spec.
+  You might want to look at that option, if you didn't know about it already.
 
 == Examples
 
@@ -26,6 +28,7 @@ You might want to look at that option, if you didn't know about it already.
   end
 
 == License
-See LICENSE.txt
+  
+  See LICENSE.txt
 
 
