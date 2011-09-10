@@ -1,10 +1,8 @@
 = minitest/context
-
-* author : Rob Gleeson <rob@flowof.info>
-* home   : http://github.com/robgleeson/minitest-context
+  * home   : http://github.com/robgleeson/minitest-context
+  * author : Rob Gleeson <rob@flowof.info>
 
 == Description
-
 minitest/context allows you to define contexts that you can use for code reuse in your tests.
 The idea orginated from shared_context() and include_context() methods distributed with RSpec.
 
@@ -28,7 +26,6 @@ You might want to look at that option, if you didn't know about it already.
   end
 
 == License
-
 See LICENSE.txt
 
 
