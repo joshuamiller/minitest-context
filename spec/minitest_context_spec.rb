@@ -9,12 +9,6 @@ describe MiniTest::Context do
     end
   end
 
-  describe "a suite which has not inherited a context." do
-    it "should not inherit any state from suites with inherited contexts." do
-      @example.must_be_instance_of(NilClass)
-    end
-  end
-
   describe "two suites who inherit the same context." do
     inherit_context :before_block
     
