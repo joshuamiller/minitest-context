@@ -32,3 +32,8 @@ describe "MiniTest::Context.define" do
   end
 end
 
+describe "MiniTest::Spec.inherit_context" do
+  it "should raise an ArgumentError when no context by given name can be found." do
+    proc { MiniTest::Spec.inherit_context(:fail) }.must_raise(ArgumentError) 
+  end
+end
