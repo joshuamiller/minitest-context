@@ -15,4 +15,3 @@ module MiniTest
   end
 
 end
-
