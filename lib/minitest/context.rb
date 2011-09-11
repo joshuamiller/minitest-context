@@ -3,7 +3,7 @@ require 'minitest/ext/spec'
 module MiniTest::Context 
 
   class << self
-    attr_accessor :list
+    attr_reader :list
 
     def define name, &block
       (@list ||= {})[name] = block
@@ -11,4 +11,3 @@ module MiniTest::Context
   end
 
 end
-
