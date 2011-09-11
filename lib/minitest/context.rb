@@ -7,6 +7,7 @@ module MiniTest::Context
     attr_reader :list
 
     def define name, &block
+      raise ArgumentError, "Block expected." unless block_given?
       (@list ||= {})[name] = block
     end
   end

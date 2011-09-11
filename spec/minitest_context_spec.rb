@@ -25,3 +25,10 @@ describe "Contexts" do
     end
   end
 end
+
+describe "MiniTest::Context.define" do
+  it "should raise an ArgumentError when no block is recieved." do
+    proc { MiniTest::Context.define(:fail) }.must_raise(ArgumentError)
+  end
+end
+
