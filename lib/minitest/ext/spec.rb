@@ -1,4 +1,5 @@
 class MiniTest::Spec
+  
   class << self 
     def inherit_context name
       if MiniTest::Context.list.has_key?(name) 
@@ -8,5 +9,5 @@ class MiniTest::Spec
       end
     end
   end
-end
 
+end
