@@ -1,6 +1,4 @@
-require 'minitest/spec'
 require 'minitest/ext/spec'
-
 
 module MiniTest::Context 
 
