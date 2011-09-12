@@ -2,4 +2,4 @@
 Gemfile.lock
 pkg/*
 .bundle/*
-bundler_gems/*
+gem_deps/*
