@@ -1,8 +1,11 @@
 require 'minitest/spec'
 require 'minitest/ext/spec'
 
+
 module MiniTest::Context 
-  
+
+  autoload :VERSION, "minitest/context/version"
+
   class << self
     attr_reader :list
 
