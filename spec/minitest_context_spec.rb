@@ -1,4 +1,4 @@
-require 'spec_setup'
+require 'spec_helper'
 
 describe "Contexts" do
   describe "an inherited context." do
