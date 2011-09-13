@@ -1,7 +1,8 @@
 --no-private
 -M redcarpet
 -m markdown
---main README.md
+--hide-void-return
+--main README.txt
 - 
 README.txt
 LICENSE.txt
