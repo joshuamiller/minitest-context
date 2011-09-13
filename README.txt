@@ -3,6 +3,7 @@
   * Author : Rob Gleeson <rob@flowof.info>
   * Home   : https://github.com/robgleeson/minitest-context
   * API    : http://rubydoc.info/github/robgleeson/minitest-context/master
+
 == Description
   
   minitest/context allows you to define contexts that you can use for code reuse in your tests.
