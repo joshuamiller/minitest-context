@@ -4,7 +4,7 @@ class MiniTest::Spec
 
     # Evaluates a context by _name_ in the scope of a MiniTest::Spec subclass.
     #
-    # @param [String] name
+    # @param [Symbol] name
     #   The name of a context which has been defined by {MiniTest::Context.define define}.
     #
     # @raise [ArgumentError]
