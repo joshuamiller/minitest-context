@@ -3,3 +3,6 @@ Gemfile.lock
 pkg/*
 .bundle/*
 gem_deps/*
+
+/.yardoc/
+/doc/
