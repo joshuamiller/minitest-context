@@ -10,6 +10,14 @@ module MiniTest::Context
 
     # Define a context for re-use in a subclass of MiniTest::Spec.
     #
+    # @example
+    #   
+    #   MiniTest::Context.define(:example) do
+    #     before do
+    #       puts "Hello, world!"
+    #     end
+    #   end
+    #
     # @param [Symbol] name  
     #   The name of the context to define.
     #
