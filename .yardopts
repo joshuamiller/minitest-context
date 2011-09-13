@@ -1,0 +1,8 @@
+--no-private
+-M redcarpet
+-m markdown
+--main README.md
+- 
+README.txt
+LICENSE.txt
+
