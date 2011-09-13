@@ -1,8 +1,9 @@
 = minitest/context
   
-  * Author : Rob Gleeson <rob@flowof.info>
-  * Home   : https://github.com/robgleeson/minitest-context
-  * API    : http://rubydoc.info/github/robgleeson/minitest-context/master/frames
+  * Author    : Rob Gleeson <rob@flowof.info>
+  * Home      : https://github.com/robgleeson/minitest-context
+  * API       : http://rubydoc.info/github/robgleeson/minitest-context/master/frames
+  * CI status : http://travis-ci.org/#!/robgleeson/minitest-context
 
 == Description
   
