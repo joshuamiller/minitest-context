@@ -15,27 +15,27 @@
 
 == Examples
 
-  MiniTest::Context.define(:example) do
+  MiniTest::Context.define(:operand) do
     before do
-      @answer = 42
+      @operand = 40
     end
   end
 
-  describe SomeClass do
-    inherit_context :example
-
-    it "should subtract the answer by 12." do
-      @answer -= 12
-      @answer.must_equal(30)
-    end
-  end
-
-  describe SomeOtherClass do
-    inherit_context :example
+  describe "Addition operator" do
+    inherit_context :operand
   
-    it "should subtract the answer by 22." do
-      @answer -= 22
-      @answer.must_equal(20)
+    it "should perform addition on the operand." do
+      @operand = @operand + 10
+      @operand.must_equal(50)
+    end
+  end
+
+  describe "Subtraction operator" do
+    inherit_context :operand
+
+    it "should perform subtraction on the operand." do
+      @operand = @operand - 10
+      @operand.must_equal(30)
     end
   end
 
