@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["rob@flowof.info"]
   s.homepage    = "https://github.com/robgleeson/minitest-context"
 
-  s.summary     = "Define contexts for reuse in minitest/spec tests that share common expectations or state."
+  s.summary     = "Define contexts for reuse in MiniTest specs that share common expectations."
   s.description = s.summary
 
   s.files         = `git ls-files`.split("\n")
