@@ -19,7 +19,9 @@ class MiniTest::Spec
     # @return [void] 
     def inherit_context name
       if MiniTest::Context.list.has_key?(name) 
-        class_eval &MiniTest::Context.list[name]
+        MiniTest::Context.list[name].each do |context| 
+          class_eval &context
+        end
       else
         raise ArgumentError, "No context with #{name} found."
       end

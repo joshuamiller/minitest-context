@@ -24,6 +24,14 @@ describe "Contexts" do
       end
     end
   end
+
+  describe "A stacked context." do
+    inherit_context :stacked_context
+
+    it "should execute all stacked contexts." do
+      @number.must_equal(2)
+    end
+  end
 end
 
 describe "MiniTest::Context.define" do
