@@ -24,16 +24,18 @@
   describe SomeClass do
     inherit_context :example
 
-    it "should answer any question I ask correctly." do
-      @answer.must_equal(42)
+    it "should subtract the answer by 12." do
+      @answer -= 12
+      @answer.must_equal(30)
     end
   end
 
   describe SomeOtherClass do
     inherit_context :example
   
-    it "should answer any question I ask correctly." do
-      @answer.must_equal(42)
+    it "should subtract the answer by 22." do
+      @answer -= 22
+      @answer.must_equal(20)
     end
   end
 
