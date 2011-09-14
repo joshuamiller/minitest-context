@@ -5,6 +5,7 @@ module MiniTest::Context
   autoload :VERSION, "minitest/context/version"
 
   class << self
+    
     # @private
     attr_reader :list
 
@@ -34,6 +35,7 @@ module MiniTest::Context
       @list ||= Hash.new { |h,k| h[k] = [] }
       @list[name] << block
     end
+
   end
 
 end

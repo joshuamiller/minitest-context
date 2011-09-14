@@ -26,6 +26,7 @@ class MiniTest::Spec
         raise ArgumentError, "No context with #{name} found."
       end
     end
+
   end
 
 end
