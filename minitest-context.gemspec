@@ -8,8 +8,9 @@ Gem::Specification.new do |s|
   s.authors     = ["robgleeson"]
   s.email       = ["rob@flowof.info"]
   s.homepage    = "https://github.com/robgleeson/minitest-context"
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+
+  s.summary     = "Define contexts for reuse in minitest/spec tests that share common expectations or state."
+  s.description = s.summary
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
