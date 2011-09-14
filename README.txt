@@ -7,7 +7,7 @@
 
 == Description
   
-  minitest/context can define contexts that can be used for code reuse in MiniTest specs.
+  minitest/context can define contexts for code reuse in MiniTest specs that share common expectations.
   The idea orginated from the shared_context() and include_context() methods distributed with RSpec.
 
   MiniTest supports code re-use in MiniTest specs already, via a subclass of MiniTest::Spec.
@@ -17,16 +17,24 @@
 
   MiniTest::Context.define(:example) do
     before do
-      puts "cheeze burgerz!"
+      @answer = 42
     end
   end
 
   describe SomeClass do
     inherit_context :example
+
+    it "should answer any question I ask correctly." do
+      @answer.must_equal(42)
+    end
   end
 
   describe SomeOtherClass do
     inherit_context :example
+  
+    it "should answer any question I ask correctly." do
+      @answer.must_equal(42)
+    end
   end
 
 == License
