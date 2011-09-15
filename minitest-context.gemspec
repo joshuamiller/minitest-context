@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["rob@flowof.info"]
   s.homepage    = "https://github.com/robgleeson/minitest-context"
 
-  s.summary     = "Define contexts for code reuse in MiniTest specs that share common expectations."
+  s.summary     = "Defines contexts for code reuse in MiniTest specs that share common expectations."
   s.description = s.summary
 
   s.files         = `git ls-files`.split("\n")
@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency     "minitest", "~> 2.5.1"
+  s.add_runtime_dependency     "minitest", "~> 2.5"
   s.add_development_dependency "rake"    , "~> 0.9.2"
 end

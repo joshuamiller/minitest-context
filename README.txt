@@ -39,6 +39,10 @@
     end
   end
 
+== Install
+
+  gem install minitest-context
+
 == License
   
   See LICENSE.txt
