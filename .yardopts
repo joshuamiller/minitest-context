@@ -2,8 +2,8 @@
 -M redcarpet
 -m markdown
 --hide-void-return
---main README.txt
+--main README.md
 - 
-README.txt
+README.md
 LICENSE.txt
 
