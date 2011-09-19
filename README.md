@@ -1,7 +1,7 @@
 __OVERVIEW__
 
 
-| Project         | minitest-spec    
+| Project         | minitest-context    
 |:----------------|:--------------------------------------------------
 | Author          | Rob Gleeson             
 | Homepage        | https://github.com/robgleeson/minitest-context
