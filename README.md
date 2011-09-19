@@ -1,16 +1,17 @@
 __OVERVIEW__
 
 
-| Homepage        | https://github.com/robgleeson/minitest-context    
+| Project         | minitest-spec    
 |:----------------|:--------------------------------------------------
-| Author          | Rob Gleeson <rob@flowof.info>                    
+| Author          | Rob Gleeson <rob@flowof.info>              
+| Homepage        | https://github.com/robgleeson/minitest-context
 | Documentation   | http://rubydoc.info/gems/minitest-context/frames 
 
 
 __DESCRIPTION__
 
   minitest/context can define contexts for code reuse in MiniTest specs that share common expectations.  
-  The idea orginated from the shared_context() and include_context() methods distributed with RSpec.  
+  The idea orginated from the `shared_context()` and `include_context()` methods distributed with RSpec.  
 
   MiniTest supports code re-use in MiniTest specs already, via a subclass of MiniTest::Spec.  
   You might want to look at that option, if you didn't know about it already.  
