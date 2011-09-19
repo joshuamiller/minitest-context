@@ -1,10 +1,10 @@
 __OVERVIEW__
 
 
-| Homepage       | https://github.com/robgleeson/minitest-context    
-|----------------|--------------------------------------------------
-| Author         | Rob Gleeson <rob@flowof.info>                    
-| Documentation  | http://rubydoc.info/gems/minitest-context/frames 
+| Homepage        | https://github.com/robgleeson/minitest-context    
+|:----------------|:--------------------------------------------------
+| Author          | Rob Gleeson <rob@flowof.info>                    
+| Documentation   | http://rubydoc.info/gems/minitest-context/frames 
 
 
 __DESCRIPTION__
