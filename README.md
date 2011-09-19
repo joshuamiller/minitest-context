@@ -3,7 +3,7 @@ __OVERVIEW__
 
 | Project         | minitest-spec    
 |:----------------|:--------------------------------------------------
-| Author          | Rob Gleeson <rob@flowof.info>              
+| Author          | Rob Gleeson             
 | Homepage        | https://github.com/robgleeson/minitest-context
 | Documentation   | http://rubydoc.info/gems/minitest-context/frames 
 
