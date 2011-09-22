@@ -6,3 +6,8 @@ rvm:
   - jruby
   - ruby-head
   - ree
+
+notifications:
+  irc: "irc.freenode.org#flowof.info"
+  recipients:
+    - rob@flowof.info
