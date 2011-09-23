@@ -28,8 +28,8 @@ __EXAMPLES__
       inherit_context :operand
     
       it "should perform addition on the operand." do
-        @operand = @operand + 10
-        @operand.must_equal(50)
+        result = @operand + 10
+        result.must_equal(50)
       end
     end
 
@@ -37,8 +37,8 @@ __EXAMPLES__
       inherit_context :operand
 
       it "should perform subtraction on the operand." do
-        @operand = @operand - 10
-        @operand.must_equal(30)
+        result = @operand - 10
+        result.must_equal(30)
       end
     end
 
