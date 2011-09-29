@@ -2,10 +2,10 @@ class MiniTest::Spec
   
   class << self 
 
-    # Evaluates a context by _name_ in the scope of a MiniTest::Spec subclass.
     #
-    # @example
-    #   
+    # Evaluates a context by +name+ in the scope of a MiniTest::Spec subclass.
+    #
+    # @example  
     #   describe ExampleClass do
     #     inherit_context :example
     #   end
@@ -17,6 +17,7 @@ class MiniTest::Spec
     #   Raises an ArgumentError if a context by _name_ does not exist.
     #
     # @return [void] 
+    #
     def inherit_context name
       if MiniTest::Context.list.has_key?(name) 
         MiniTest::Context.list[name].each do |context| 

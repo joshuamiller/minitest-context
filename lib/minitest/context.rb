@@ -9,10 +9,10 @@ module MiniTest::Context
     # @private
     attr_reader :list
 
+    #
     # Define a context for re-use in a subclass of MiniTest::Spec.
     #
-    # @example
-    #   
+    # @example  
     #   MiniTest::Context.define(:example) do
     #     before do
     #       puts "Hello, world!"
@@ -23,13 +23,14 @@ module MiniTest::Context
     #   The name of the context to define.
     #
     # @param [Proc]   block 
-    #   A Proc object that is evaluated in a subclass of MiniTest::Spec 
-    #   through {MiniTest::Spec.inherit_context inherit_context}.
+    #   A Proc object that is evaluated in a subclass of MiniTest::Spec through 
+    #   {MiniTest::Spec.inherit_context}.
     #
     # @raise [ArgumentError] 
-    #   Raises an ArgumentError if _block_ is not supplied as an argument.
+    #   Raises an ArgumentError if +block+ is missing.
     #
     # @return [void]
+    #
     def define name, &block
       raise ArgumentError, "Block expected." unless block_given?
       @list ||= Hash.new { |h,k| h[k] = [] }
