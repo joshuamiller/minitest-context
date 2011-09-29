@@ -3,7 +3,7 @@ class MiniTest::Spec
   class << self 
 
     #
-    # Evaluates a context by +name+ in the scope of a MiniTest::Spec subclass.
+    # Evaluates a context by name.
     #
     # @example  
     #   describe ExampleClass do
@@ -14,7 +14,7 @@ class MiniTest::Spec
     #   The name of a context defined by {MiniTest::Context.define define}.
     #
     # @raise [ArgumentError]
-    #   Raises an ArgumentError if a context by +name+ does not exist.
+    #   Raises an ArgumentError if a context by name does not exist.
     #
     # @return [void] 
     #

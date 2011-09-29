@@ -10,7 +10,7 @@ module MiniTest::Context
     attr_reader :list
 
     #
-    # Define a context for re-use in a subclass of MiniTest::Spec.
+    # Defines a context.
     #
     # @example  
     #   MiniTest::Context.define(:example) do
