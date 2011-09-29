@@ -14,9 +14,7 @@ module MiniTest::Context
     #
     # @example  
     #   MiniTest::Context.define(:example) do
-    #     before do
-    #       puts "Hello, world!"
-    #     end
+    #     before { puts "Hello, world!" }
     #   end
     #
     # @param [Symbol] name  
