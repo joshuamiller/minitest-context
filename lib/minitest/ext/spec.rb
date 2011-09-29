@@ -11,10 +11,10 @@ class MiniTest::Spec
     #   end
     #
     # @param [Symbol] name
-    #   The name of a context which has been defined by {MiniTest::Context.define define}.
+    #   The name of a context defined by {MiniTest::Context.define define}.
     #
     # @raise [ArgumentError]
-    #   Raises an ArgumentError if a context by _name_ does not exist.
+    #   Raises an ArgumentError if a context by +name+ does not exist.
     #
     # @return [void] 
     #
