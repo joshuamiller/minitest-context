@@ -7,7 +7,9 @@ module MiniTest::Context
   class << self
     
     # @private
-    attr_reader :list
+    def list
+      @list = @list || Hash.new { |h,k| h[k] = [] }
+    end
 
     #
     # Defines a context.
@@ -30,8 +32,7 @@ module MiniTest::Context
     #
     def define name, &block
       raise ArgumentError, "Block expected." unless block_given?
-      @list = @list || Hash.new { |h,k| h[k] = [] }
-      @list[name] << block
+      list[name] << block
     end
 
   end
