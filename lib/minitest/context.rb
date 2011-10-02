@@ -20,12 +20,11 @@ module MiniTest::Context
     # @param [Symbol] name  
     #   The name of the context to define.
     #
-    # @param [Proc]   block 
-    #   A Proc object that is evaluated in a subclass of MiniTest::Spec through 
-    #   {MiniTest::Spec.inherit_context}.
+    # @param [Proc] block 
+    #   Evaluated in a subclass of MiniTest::Spec through {MiniTest::Spec.inherit_context}.
     #
     # @raise [ArgumentError] 
-    #   Raises an ArgumentError if +block+ is missing.
+    #   Raises an ArgumentError if block is missing.
     #
     # @return [void]
     #
