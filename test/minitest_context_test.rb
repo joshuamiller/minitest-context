@@ -13,13 +13,13 @@ describe "Contexts" do
     inherit_context :before_block
     
     describe "Suite 1" do
-      it "must the inherit context from the parent suite." do
+      it "must inherit the context from the parent suite." do
         @example.must_be_instance_of(Array)
       end
     end
 
     describe "Suite 2" do
-      it "must the inherit context from the parent suite." do
+      it "must inherit the context from the parent suite." do
         @example.must_be_instance_of(Array)
       end
     end
@@ -28,7 +28,7 @@ describe "Contexts" do
   describe "A stacked context." do
     inherit_context :stacked_context
 
-    it "must execute all stacked contexts." do
+    it "must inherit all stacked contexts." do
       @number.must_equal(2)
     end
   end
