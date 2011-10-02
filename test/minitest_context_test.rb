@@ -1,4 +1,4 @@
-require 'spec_helper'
+require File.expand_path("setup.rb", File.dirname(__FILE__))
 
 describe "Contexts" do
   describe "an inherited context." do

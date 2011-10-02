@@ -3,4 +3,4 @@ require 'minitest/spec'
 require 'minitest/context'
 require 'minitest/autorun'
 
-Dir["./spec/contexts/*.rb"].each { |f| require(f) }
+Dir["./test/contexts/*.rb"].each { |f| require(f) }
