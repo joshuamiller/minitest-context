@@ -3,9 +3,9 @@ __OVERVIEW__
 
 | Project         | minitest-context    
 |:----------------|:--------------------------------------------------
-| Author          | Rob Gleeson             
 | Homepage        | https://github.com/robgleeson/minitest-context
 | Documentation   | http://rubydoc.info/gems/minitest-context/frames 
+| Author          | Rob Gleeson             
 
 
 __DESCRIPTION__
