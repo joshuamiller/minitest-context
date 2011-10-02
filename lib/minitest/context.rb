@@ -30,7 +30,7 @@ module MiniTest::Context
     #
     def define name, &block
       raise ArgumentError, "Block expected." unless block_given?
-      @list ||= Hash.new { |h,k| h[k] = [] }
+      @list = @list || Hash.new { |h,k| h[k] = [] }
       @list[name] << block
     end
 
