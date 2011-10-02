@@ -24,7 +24,7 @@ class MiniTest::Spec
           class_eval &context
         end
       else
-        raise ArgumentError, "No context with #{name} found."
+        raise ArgumentError, "No context by name '#{name}' found."
       end
     end
 
