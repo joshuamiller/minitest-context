@@ -4,8 +4,8 @@ describe "Contexts" do
   describe "An inherited context." do
     inherit_context :before_block
 
-    it "must assign an Array to @example." do
-      @example.must_be_instance_of(Array)
+    it "must assign an Array to @subject." do
+      @subject.must_be_instance_of(Array)
     end
   end
 
@@ -14,13 +14,13 @@ describe "Contexts" do
     
     describe "Suite 1" do
       it "must inherit the context from the parent suite." do
-        @example.must_be_instance_of(Array)
+        @subject.must_be_instance_of(Array)
       end
     end
 
     describe "Suite 2" do
       it "must inherit the context from the parent suite." do
-        @example.must_be_instance_of(Array)
+        @subject.must_be_instance_of(Array)
       end
     end
   end
