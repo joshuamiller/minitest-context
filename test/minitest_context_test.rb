@@ -29,7 +29,7 @@ describe "Contexts" do
     inherit_context :stacked_context
 
     it "must inherit all stacked contexts." do
-      @number.must_equal(2)
+      @subject.must_equal(2)
     end
   end
 end
