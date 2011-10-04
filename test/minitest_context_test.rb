@@ -5,7 +5,7 @@ describe "Contexts" do
     inherit_context :before_block
 
     it "must assign an Array to @subject." do
-      @subject.must_be_instance_of(Array)
+      @subject.must_equal([1,2,3])
     end
   end
 
@@ -14,13 +14,13 @@ describe "Contexts" do
     
     describe "Suite 1" do
       it "must inherit the context from the parent suite." do
-        @subject.must_be_instance_of(Array)
+        @subject.must_equal([1,2,3])
       end
     end
 
     describe "Suite 2" do
       it "must inherit the context from the parent suite." do
-        @subject.must_be_instance_of(Array)
+        @subject.must_equal([1,2,3])
       end
     end
   end
