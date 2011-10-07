@@ -27,7 +27,7 @@ __EXAMPLES__
     describe "Addition operator" do
       use_context :operand
     
-      it "should perform addition on the operand." do
+      it "must perform addition on the operand." do
         result = @operand + 10
         result.must_equal(50)
       end
@@ -36,7 +36,7 @@ __EXAMPLES__
     describe "Subtraction operator" do
       use_context :operand
 
-      it "should perform subtraction on the operand." do
+      it "must perform subtraction on the operand." do
         result = @operand - 10
         result.must_equal(30)
       end
