@@ -25,7 +25,7 @@ __EXAMPLES__
     end
 
     describe "Addition operator" do
-      inherit_context :operand
+      use_context :operand
     
       it "should perform addition on the operand." do
         result = @operand + 10
@@ -34,7 +34,7 @@ __EXAMPLES__
     end
 
     describe "Subtraction operator" do
-      inherit_context :operand
+      use_context :operand
 
       it "should perform subtraction on the operand." do
         result = @operand - 10
