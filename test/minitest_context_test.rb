@@ -2,7 +2,7 @@ require File.expand_path("setup.rb", File.dirname(__FILE__))
 
 describe "Contexts" do
   describe "An inherited context." do
-    inherit_context :before_block
+    use_context :before_block
 
     it "must assign an Array to @subject." do
       @subject.must_equal([1,2,3])
@@ -10,7 +10,7 @@ describe "Contexts" do
   end
 
   describe "two suites who inherit the same context." do
-    inherit_context :before_block
+    use_context :before_block
     
     describe "Suite 1" do
       it "must inherit the context from the parent suite." do
@@ -26,7 +26,7 @@ describe "Contexts" do
   end
 
   describe "A stacked context." do
-    inherit_context :stacked_context
+    use_context :stacked_context
 
     it "must inherit all stacked contexts." do
       @subject.must_equal(2)
@@ -40,8 +40,8 @@ describe "MiniTest::Context.define" do
   end
 end
 
-describe "MiniTest::Spec.inherit_context" do
+describe "MiniTest::Spec.use_context" do
   it "must raise an ArgumentError when no context by given name can be found." do
-    proc { MiniTest::Spec.inherit_context(:fail) }.must_raise(ArgumentError) 
+    proc { MiniTest::Spec.use_context(:fail) }.must_raise(ArgumentError) 
   end
 end

@@ -7,7 +7,7 @@ class MiniTest::Spec
     #
     # @example  
     #   describe ExampleClass do
-    #     inherit_context :example
+    #     use_context :example
     #   end
     #
     # @param [Symbol] name
@@ -18,7 +18,7 @@ class MiniTest::Spec
     #
     # @return [void] 
     #
-    def inherit_context name
+    def use_context name
       if MiniTest::Context.list.has_key?(name) 
         MiniTest::Context.list[name].each do |context| 
           class_eval &context
@@ -27,6 +27,7 @@ class MiniTest::Spec
         raise ArgumentError, "No context by name '#{name}' found."
       end
     end
+    alias_method :inherit_context, :use_context
 
   end
 
