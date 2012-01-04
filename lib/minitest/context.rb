@@ -3,20 +3,16 @@ require 'minitest/ext/spec'
 
 module MiniTest::Context 
 
-  class << self
+  def self.list
+    @list = @list || Hash.new { |h,k| h[k] = [] }
+  end
 
-    def list
-      @list = @list || Hash.new { |h,k| h[k] = [] }
+  def self.define name, &block
+    if block_given?
+      list[name] << block
+    else
+      raise ArgumentError, "Block expected, but none given." 
     end
-
-    def define name, &block
-      if block_given?
-        list[name] << block
-      else
-        raise ArgumentError, "Block expected, but none given." 
-      end
-    end
-
   end
 
 end

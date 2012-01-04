@@ -1,18 +1,14 @@
 class MiniTest::Spec
   
-  class << self
-
-    def use_context name
-      if MiniTest::Context.list.has_key?(name) 
-        MiniTest::Context.list[name].each do |block| 
-          class_eval &block
-        end
-      else
-        raise ArgumentError, "No context by name '#{name}' found."
+  def self.use_context name
+    if MiniTest::Context.list.has_key?(name) 
+      MiniTest::Context.list[name].each do |block| 
+        class_eval &block
       end
+    else
+      raise ArgumentError, "No context by name '#{name}' found."
     end
-    alias_method :inherit_context, :use_context
-
   end
+  alias_method :inherit_context, :use_context
 
 end
