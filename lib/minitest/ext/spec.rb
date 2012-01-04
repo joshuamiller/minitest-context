@@ -9,6 +9,9 @@ class MiniTest::Spec
       raise ArgumentError, "No context by name '#{name}' found."
     end
   end
-  alias_method :inherit_context, :use_context
+
+  def self.inherit_context name
+    use_context name
+  end
 
 end
