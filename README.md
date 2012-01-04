@@ -10,7 +10,7 @@ __OVERVIEW__
 
 __DESCRIPTION__
 
-  minitest-context can define contexts for code reuse in minitest specs that share common expectations.  
+  minitest-context can be used to reuse code in minitest specs that share common expectations.  
   The idea orginated from the `shared_context()` and `include_context()` methods distributed with RSpec.  
 
   minitest supports code re-use in minitest specs already, via a subclass of MiniTest::Spec.  
