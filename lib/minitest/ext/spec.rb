@@ -1,3 +1,5 @@
+require 'minitest'
+
 class MiniTest::Spec
   
   def self.use_context name
