@@ -1,4 +1,4 @@
-require 'minitest'
+require 'minitest/spec'
 
 class MiniTest::Spec
   
