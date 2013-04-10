@@ -9,6 +9,12 @@ describe "Contexts" do
     end
   end
 
+  describe "none used" do
+    it "must not inherit from other describe blocks" do
+      @subject.must_be_nil
+    end
+  end
+
   describe "two suites who inherit the same context." do
     use_context :before_block
     
@@ -29,7 +35,7 @@ describe "Contexts" do
     use_context :stacked_context
 
     it "must inherit all stacked contexts." do
-      @subject.must_equal(2)
+      (first + second).must_equal(2)
     end
   end
 end

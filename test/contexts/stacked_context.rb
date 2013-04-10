@@ -1,11 +1,7 @@
 MiniTest::Context.define(:stacked_context) do
-  before do
-    @subject = 1
-  end
+  let(:first) { 1 }
 end
 
 MiniTest::Context.define(:stacked_context) do
-  before do
-    @subject += 1
-  end
+  let(:second) { 1 }
 end
